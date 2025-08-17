@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Minecraft Developer</title>
+  <style>
+    # fuente de mi causa 
+    @import url('https://fonts.cdnfonts.com/css/minecraft-4');
+
+    body {
+      margin: 0;
+      font-family: 'Minecraft', sans-serif;
+      background: url('https://i.imgur.com/GrfHgVV.gif') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+  
+    .particles {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .particle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: url('https://i.imgur.com/GrfHgVV.gif');
+      background-size: cover;
+      animation: float 10s linear infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) rotate(0); opacity: 1; }
+      100% { transform: translateY(-1200px) rotate(720deg); opacity: 0; }
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: rgba(0,0,0,0.6);
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #00ff00;
+      text-shadow: 3px 3px #000;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .section {
+      padding: 4rem 2rem;
+      background: rgba(0,0,0,0.75);
+      margin: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00ff00;
+      position: relative;
+      z-index: 2;
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #00ff00;
+      border-bottom: 2px solid #00ff00;
+      padding-bottom: .5rem;
+      margin-bottom: 1rem;
+    }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #111;
+      border: 2px solid #00ff00;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ff00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: rgba(0,0,0,0.9);
+      font-size: 0.9rem;
+      z-index: 2;
+      position: relative;
+    }
+
+    footer a {
+      color: #00ff00;
+      text-decoration: none;
+      margin: 0 1rem;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="particles">
+    <div class="particle" style="left:10%; animation-duration:12s;"></div>
+    <div class="particle" style="left:30%; animation-duration:15s;"></div>
+    <div class="particle" style="left:50%; animation-duration:10s;"></div>
+    <div class="particle" style="left:70%; animation-duration:18s;"></div>
+    <div class="particle" style="left:90%; animation-duration:14s;"></div>
+  </div>
+
+  <header>
+    <h1>{tu User pe}</h1>
+    <p>Developer Profesional de Minecraft | Plugins | Mods | Servidores</p>
+  </header>
+
+  <section class="section">
+    <h2>Sobre mí</h2>
+    <p>Soy un desarrollador experto en Minecraft con más de (X años) de experiencia creando servidores únicos, optimizando plugins y desarrollando sistemas personalizados. Me apasiona transformar ideas en experiencias jugables.</p>
+  </section>
+
+  <section class="section">
+    <h2>Habilidades</h2>
+    <div class="skills">
+      <div class="card">Creación de Plugins Spigot & Paper</div>
+      <div class="card">Desarrollo de Mods Forge/Fabric</div>
+      <div class="card">Sistemas de Economía & Tiendas</div>
+      <div class="card">Configuración de Servidores (BungeeCord, Velocity)</div>
+      <div class="card">Optimización de Rendimiento</div>
+      <div class="card">Bases de datos MySQL & MongoDB</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Proyectos</h2>
+    <div class="projects">
+      <div class="card">Servidor HCF (con sistemas avanzados de facciones)</div>
+      <div class="card">Tienda Online conectada a Minecraft</div>
+      <div class="card">Sistema AntiCheat personalizado</div>
+      <div class="card">Red de Servidores (Hub, Survival, Skyblock)</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Contacto</h2>
+    <p>Discord: <strong>tu Discord PE</strong></p>
+    <p>Email: <strong>tucorreocausa.com</strong></p>
+  </section>
+
+  <footer>
+    <p>© 2025 {causa nick} - Todos los derechos reservados</p>
+    <a href="https://github.com/causa-github" target="_blank">GitHub</a> | 
+<a href="https://www.linkedin.com/in/causauser" target="_blank">LinkedIn</a> | 
+<a href="https://discord.gg/dcdecausa" target="_blank">Discord</a>
+  </footer>
+</body>
+</html>
